@@ -1,0 +1,9 @@
+header {
+	height     : 60px;
+	box-shadow : 0 0 5px 0 grey;
+	
+	& .logo {
+		width  : 150px;
+		height : 60px;
+	}
+}

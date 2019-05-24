@@ -1,0 +1,75 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.blue-bar {
+	height             : 180px;
+	background-color   : #BBEFF1;
+	-webkit-box-shadow : inset 0 -75px 18px -82px rgba(0, 0, 0, 1);
+	-moz-box-shadow    : inset 0 -75px 18px -82px rgba(0, 0, 0, 1);
+	box-shadow         : inset 0 -75px 18px -82px rgba(0, 0, 0, 1);
+}
+
+.profile-picture {
+	z-index       : 1000;
+	margin-top    : -100px;
+	width         : 200px;
+	height        : 200px;
+	border-radius : 22px;
+	border        : 10px solid rgba(255, 255, 255, 0.8);
+}
+
+.skills {
+	& .badge {
+		&.custom-badge {
+			height     : 35px;
+			background : white;
+			font-size  : 1rem;
+			
+			& .endorse {
+				& span:first-child {
+					display : none;
+				}
+				
+				width         : 27px;
+				background    : $joboonja-light-x;
+				border-radius : 5px;
+				font-size     : 0.9rem;
+				@include set_transition();
+			}
+			
+			&:hover {
+				& .endorse {
+					& span:first-child {
+						display : block;
+					}
+					
+					& span:last-child {
+						display : none;
+					}
+					
+					background  : $joboonja-green;
+					color       : white;
+					font-weight : bold;
+				}
+			}
+			
+			& .endorsed {
+				background    : $joboonja-green;
+				color         : white;
+				width         : 27px;
+				border-radius : 5px;
+				font-size     : 0.9rem;
+			}
+		}
+	}
+}
+
+#dropdownMenuButton {
+	color : black;
+}
+
+#dropdownItems {
+	position   : absolute;
+	background : $joboonja-gray-light;
+	@include border-bottom-radius(5px);
+}

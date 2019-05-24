@@ -1,0 +1,59 @@
+@import "iransans-fonts/fonts.css";
+@import "icons/font/flaticon.css";
+@import "mixins";
+
+body {
+	font-family : IRANSans, serif;
+	background  : #F6F6F6;
+	direction   : rtl;
+	font-size   : 1rem;
+	
+	& a {
+		text-decoration : none;
+		
+		&:hover {
+			text-decoration : none;
+		}
+	}
+	
+	& .dir-rtl {
+		direction : rtl;
+	}
+	
+	& .dir-ltr {
+		direction : ltr;
+	}
+	
+	& .border-radius-0 {
+		border-radius : 0;
+	}
+	
+	& .no-outline {
+		box-shadow : none !important;
+		outline    : none !important;
+	}
+	
+	& .pointer {
+		cursor : pointer !important;
+	}
+	
+	& .default {
+		cursor : default;
+	}
+	
+	& .container-fluid.main {
+		margin-top : 60px;
+	}
+	
+	& .general-box-shadow {
+		box-shadow    : 0 1px 4px rgba($color : black, $alpha : 0.1);
+		border-radius : 5px;
+		@include set_transition();
+		
+		&:hover {
+			box-shadow : 0 2px 8px rgba($color : black, $alpha : 0.15);
+		}
+	}
+}
+
+

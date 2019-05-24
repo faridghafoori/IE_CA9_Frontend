@@ -1,0 +1,43 @@
+@import "../../assets/variables";
+@import "../../assets/mixins";
+
+.projects-section {
+	& img {
+		border-radius : 5px;
+		width         : 128px !important;
+		min-width     : 128px;
+		max-width     : 128px;
+		height        : 128px !important;
+	}
+	
+	& .title {
+		font-size : 1.1rem;
+		width     : 280px;
+		@include media-breakpoint-up(xl) {
+			width : 390px;
+		}
+	}
+	
+	& .remaining-time {
+		background    : $joboonja-light;
+		font-size     : 0.8rem;
+		color         : $joboonja-gray-dark;
+		border-radius : 5px;
+		
+		&.finished {
+			background : $joboonja-aqua-dark;
+			color      : white;
+		}
+	}
+	
+	& .budget {
+		color : $joboonja-aqua;
+	}
+	
+	& .skills .badge {
+		background : $joboonja-light;
+		color      : $joboonja-gray;
+		border     : 1px solid #DDD;
+		height     : 25px;
+	}
+}
