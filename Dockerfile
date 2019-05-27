@@ -1,8 +1,8 @@
 FROM node:8-jessie
 RUN unset http_proxy
-WORKDIR /IE
+WORKDIR /Users/farid/Desktop/UNI/IE/Projects/CA9/Joboonja
 RUN git clone https://github.com/faridghafoori/IE_CA9_Frontend.git
-WORKDIR /IE/CA9
+WORKDIR /Users/farid/Desktop/UNI/IE/Projects/CA9/Joboonja/CA9
 RUN npm install && \
 npm install pm2 -g
 RUN npm run build && \
