@@ -1,3 +1,6 @@
+# FOR RUN DOCKER-COMPOSE
+# docker-compose up -d --build
+
 version: '3.7'
 
 services:
