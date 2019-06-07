@@ -9,5 +9,5 @@ LABEL maintainer="faridghafooriadl@gmail.com"
 WORKDIR /app
 COPY package.json /app/package.json
 RUN npm install --silent
-EXPOSE 3030
+EXPOSE 3000
 CMD ["npm", "start"]
